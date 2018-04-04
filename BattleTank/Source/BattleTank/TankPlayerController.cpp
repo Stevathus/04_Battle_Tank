@@ -16,14 +16,10 @@ void ATankPlayerController::BeginPlay()
 	else {
 		UE_LOG(LogTemp, Warning, TEXT("Tank not possessed by PlayerController"));
 	}
-
-	UE_LOG(LogTemp, Warning, TEXT("PlayerController BeginPlay"));
 }
 
 ATank * ATankPlayerController::GetControlledTank() const
 {
-	
-	
 	return Cast<ATank>(GetPawn());
 }
 
